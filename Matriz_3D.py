@@ -40,24 +40,3 @@ def calcular_temperatura_promedio_ciudades(temperaturas):
 
     return promedios_ciudades
 
-# Ejemplo de datos
-temperaturas = [
-    [  # Ciudad 1
-        [25, 26, 24, 23, 22],  # Semana 1
-        [27, 28, 26, 24, 23],  # Semana 2
-        [24, 23, 25, 26, 27]   # Semana 3
-    ],
-    [  # Ciudad 2
-        [22, 23, 21, 20, 19],  # Semana 1
-        [24, 25, 23, 22, 21],  # Semana 2
-        [20, 21, 23, 24, 25]   # Semana 3
-    ]
-
-]
-
-# Llamamos a la función para calcular los promedios de temperatura de cada ciudad
-promedios_ciudades = calcular_temperatura_promedio_ciudades(temperaturas)
-
-# Mostramos los promedios de temperatura de cada ciudad
-for i, promedio in enumerate(promedios_ciudades):
-    print(f"Promedio de temperatura para la Ciudad {i + 1}: {promedio}°C")
